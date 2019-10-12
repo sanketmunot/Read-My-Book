@@ -11,7 +11,7 @@ The purpose behind this project is to provide a web-based platform which convert
 Visually impaired people require special type of books which tend to be costlier than the normal one. As we observe these students lack in receiving proper education due to their disability and we live in a society where spoon feeding is preferred more henceforth there is not much of effort put to help these students.So providing them with the audio of the book freely is one of the objective.
 
 Requisites-:
-python 3
+python3
 Flask
 Open-CV
 Tesseract OCR
