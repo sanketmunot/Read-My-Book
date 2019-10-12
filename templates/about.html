@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+    <body background="/static/images/back1.jpg">
+    
+        <div class="outer">
+            <div id="header">
+                <img src="/static/images/logo.PNG" id="logo">
+                <h1 id="heading">Read My Book</h1>
+            </div>
+
+            <nav class="menu">
+                <a href="{{ url_for('home')}}"><b>Home</b></a> &nbsp; &nbsp; &nbsp; 
+                <a href="{{ url_for('about')}}"><b>About Us</b></a> &nbsp; &nbsp; &nbsp;
+                <a href="{{ url_for('contact')}}"><b>Contact</b> </a>
+            </nav>
+            
+        <hr>
+    	 <div id="SANK">
+            <p>Sanket Munot</p>
+            <p>Image to Speech API</p>
+        </div>
+
+        <div id="RUP">
+            <p>Rupam Pusdekar</p>
+            <p>Frontend Design</p>
+        </div>
+
+        <div id="SHRA">
+            <p>Shravani Dasari</p>
+            <p>Research</p>
+
+        </div>
+
+        <div id="UK">
+            <p>Utkarsha Kandale</p>
+            <p>Application Architech</p>
+        </div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    	<div id="foot">
+    		<footer id="footer">
+            &copy; 2019 Read My Book Website &nbsp; <span class="separator">|</span>
+            </footer>
+    	</div>
+		</div>
+    </body>
+</html>

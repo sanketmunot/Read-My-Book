@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+    <body background="/static/images/back1.jpg">
+    
+        <div class="outer">
+            <div id="header">
+                <img src="/static/images/logo.PNG" id="logo">
+                <h1 id="heading">Read My Book</h1>
+            </div>
+
+            <nav class="menu">
+                <a href="{{ url_for('home')}}"><b>Home</b></a> &nbsp; &nbsp; &nbsp; 
+                <a href="{{ url_for('about')}}"><b>About Us</b></a> &nbsp; &nbsp; &nbsp;
+                <a href="{{ url_for('contact')}}"><b>Contact</b></a>
+            </nav>
+        <hr>
+<div class="ggg" style="background-color : #FFFFFF; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+    	<form class = "cform" action="feedback" method="POST">
+
+    <label for="fname">First Name</label>
+    <input style="background-color:#EBEDEF;" type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" style="background-color:#EBEDEF;" name="lastname" placeholder="Your last name..">
+
+
+    <!--<label for="country">Country</label>-->
+    <!--<select id="country" name="country" style="background-color:#EBEDEF;">-->
+      <!--<option value="india">India</option>-->
+      <!--<option value="uk">UK</option>-->
+      <!--<option value="usa">USA</option>-->
+    <!--</select>-->
+
+    <label for="fname">City</label>
+    <input style="background-color:#EBEDEF;" type="text" id="fname" name="city" placeholder="Your city..">
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="background-color:#EBEDEF; height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+    	<div>
+    		<footer id="footer">
+            &copy; 2019 Read My Book Website &nbsp; <span class="separator">|</span> 
+            </footer>
+    	</div>
+		</div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+    <body background="static/images/back1.jpg">
+	
+    	<div class="outer">
+    		<div id="header">
+    			<img src="static/images/logo.PNG" id="logo">
+    			<h1 id="heading">Read My Book</h1>
+    		</div>
+
+        	<nav class="menu">
+        		<a href="{{ url_for('home')}}"><b>Home</b></a> &nbsp; &nbsp; &nbsp; 
+        		<a href="{{ url_for('about')}}"><b>About Us</b></a> &nbsp; &nbsp; &nbsp;
+        		<a href="{{ url_for('contact')}}"><b>Contact</b> </a>
+     		</nav>
+    	<hr>
+		
+			<div id="frm">
+			<div id="form1">
+				<form id="download" action="action2" method="POST" enctype="multipart/form-data">
+				Select a file: <input type="file" name="pic" enctype="multipart/form-data" required></input><br><br><br>
+							<input type="submit" value="upload" ></input>
+				</form>
+			</div>
+			<div >
+				<br><br><br>
+			</div>
+
+			
+            <div id="form2">
+				<form id="mail" action="action" method="POST" enctype="multipart/form-data">
+				Select a file: <input type="file" name="pic" enctype="multipart/form-data" required></input><br><br>
+				Enter E-mail id: <input type="email" name="email" required></input><br><br><br>
+									<input type="submit" value="upload"></input>
+				</form>
+			</div>
+			</div>
+		
+
+		
+    	<div id="foot">
+    		<footer id="footer">
+            &copy; 2019 Read My Book Website &nbsp; <span class="separator">|</span> 
+            </footer>
+    	</div>
+		</div>
+    </body>
+</html>
