@@ -13,7 +13,7 @@ Visually impaired people require special type of books which tend to be costlier
 Requisites-:
 python3
 Flask
-Open-CV
+OpenCV
 Tesseract OCR
 Yagmail
 GTTs
